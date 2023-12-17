@@ -1,0 +1,100 @@
+
+.fondoGrid{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 80px 1fr 80px 1fr 1fr;
+    grid-template-rows: 5% 15% 10% 43% 5% 20% 2%;
+    grid-template-areas: 
+    ". . . . . . ."
+    ". . bandera bandera bandera . ."
+    ". . . napo . . ."
+    ". rec1 . rec2 . rec3 ."
+    ". . . . . . ."
+    ". baner baner baner baner baner ."
+    ". . . . . . .";
+
+}
+.fondoGrid{
+    border: 4px solid black; 
+    text-align: center; 
+    background-color: #f9f9f9;
+
+}
+
+.banderaGrid{
+    grid-area: bandera;
+    background-attachment: yellow;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+}
+.amarillo {
+    background-color: #FFD100; /* Amarillo */
+}
+
+.blanco {
+    background-color: white; /* Amarillo */
+}
+
+.azul {
+    background-color: blue; /* Amarillo */
+}
+
+.rojo {
+    background-color: red; /* Amarillo */
+}
+  
+
+
+.fondoGrid h1{
+    grid-area: napo;
+    color: chocolate;
+}
+
+.rec1, .rec2, .rec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    text-align: center;
+    background-color: #f9f9f9;
+
+}
+.rec1{
+    grid-area: rec1;
+    border: 4px solid black; 
+    text-align: center; 
+    background-color: #f9f9f9;
+}
+.rec2{
+    grid-area: rec2;
+    border: 4px solid black; 
+    text-align: center; 
+    background-color: #f9f9f9;
+}
+.rec3{
+    grid-area: rec3;
+    border: 4px solid black; 
+    text-align: center; 
+    background-color: #f9f9f9;
+}
+
+.img img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.baner {
+  grid-area: baner;  
+}
+
+.baner img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black; 
+    border-radius: 10px;
+
+}
