@@ -1,12 +1,13 @@
 
 .fondoGrid{
+    background: linear-gradient(to bottom, #FFD100 0%, #ffffff 33%, blue 70%, red 100%);
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 80px 1fr 80px 1fr 1fr;
-    grid-template-rows: 5% 15% 10% 43% 5% 20% 2%;
+    grid-template-columns: 1fr 1fr 60px 1fr 60px 1fr 1fr;
+    grid-template-rows: 2% 18% 10% 43% 5% 20% 2%;
     grid-template-areas: 
     ". . . . . . ."
-    ". . bandera bandera bandera . ."
+    ". bandera bandera bandera bandera bandera ."
     ". . . napo . . ."
     ". rec1 . rec2 . rec3 ."
     ". . . . . . ."
@@ -22,33 +23,41 @@
 }
 
 .banderaGrid{
+    background-color: rgb(6, 6, 80);
     grid-area: bandera;
     background-attachment: yellow;
-    border: 2px solid blue;
+    border: 4px solid rgb(6, 6, 80);
     display: grid;
     grid-template-rows: 3fr 1fr 1fr 1fr;
-}
-.amarillo {
-    background-color: #FFD100; /* Amarillo */
-}
+ }
+   .amarillo {
+    border-radius:  15px 15px 0 0;
+    display: flex;
+    background-color: #FFD100; 
+   }
 
-.blanco {
-    background-color: white; /* Amarillo */
-}
+   .blanco {
+    display: flex;
+    background-color: white; 
+   }
 
-.azul {
-    background-color: blue; /* Amarillo */
-}
+   .azul {
+    display: flex;
+    background-color: blue; 
+   }
 
-.rojo {
-    background-color: red; /* Amarillo */
-}
+   .rojo {
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    background-color: red; 
+   }
   
 
 
 .fondoGrid h1{
     grid-area: napo;
-    color: chocolate;
+    color: green;
+    font-family:cursive;
 }
 
 .rec1, .rec2, .rec3 {
@@ -59,6 +68,7 @@
     border: 4px solid black;
     text-align: center;
     background-color: #f9f9f9;
+    
 
 }
 .rec1{
@@ -80,21 +90,52 @@
     background-color: #f9f9f9;
 }
 
-.img img {
-    width: 80px;
-    height: 80px;
+.arriba {
+    flex: 2;
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(189, 182, 182);
+    align-items: center;
+    align-content: center;
+
+ }
+ .img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+ } 
+   .img img {
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    max-height: none;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
+  }
+
+.text {
+    background-color: rgb(189, 182, 182);
+    flex: 3;
+    width: 100%;
+}
+.text h3 {
+    color: darkred;
+    font-family: cursive;
 }
 
 .baner {
   grid-area: baner;  
 }
 
+
 .baner img {
     width: 100%;
     height: 100%;
-    border: 2px solid black; 
+    border: 5px solid black; 
     border-radius: 10px;
 
 }
